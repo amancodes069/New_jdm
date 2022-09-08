@@ -1,0 +1,177 @@
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+  body {
+
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      /* height:100in; */
+      background-color: black;
+  }
+
+  .bgvid {
+      width:100%;
+      box-sizing: border-box;
+      display: inline-block;
+      height:6.7in;
+      margin-right:0px;
+      position: relative;
+      padding-right:0px;
+
+  }
+
+  header {
+      position: fixed;
+      display: inline-block;
+      padding: 0px;
+      width:100%;
+      top: 0px;
+      background-color: rgb(0, 0, 0);
+      z-index: 99;
+      border-bottom: 5px black;
+  }
+
+  .logo {
+      width: 3cm;
+      height: 2cm;
+      position: fixed;
+      padding: 0px;
+      padding-left: 18cm;
+      display: inline-block;
+      align-content: center;
+
+
+  }
+
+  .nissan {
+      font-family: 'Quicksand', sans-serif;
+      display: inline-block;
+      padding: 0px;
+      height: 2cm;
+      margin: 0px;
+      font-weight: 400;
+      padding-left: 1cm;
+      position: fixed;
+      top: 25px;
+      text-decoration: none;
+      color: white;
+  }
+
+  .Supra {
+      font-family: 'Quicksand', sans-serif;
+      display: inline-block;
+      padding: 0px;
+      margin: 0px;
+      font-weight: 400;
+      padding-left: 4.3cm;
+      position: fixed;
+      top: 25px;
+      text-decoration: none;
+      color: white;
+  }
+
+  .civic {
+      font-family: 'Quicksand', sans-serif;
+      display: inline-block;
+      padding: 0px;
+      margin: 0px;
+      font-weight: 400;
+      padding-left: 6.3cm;
+      position: fixed;
+      top: 25px;
+      text-decoration: none;
+      color: white;
+  }
+
+  .mazda {
+      font-family: 'Quicksand', sans-serif;
+      display: inline-block;
+      padding: 0px;
+      margin: 0px;
+      font-weight: 400;
+      padding-left: 8.3cm;
+      position: fixed;
+      top: 25px;
+      text-decoration: double;
+      color: white;
+  }
+
+  /* .rev{
+    display:inline-block;
+    font-size: 100px;
+    font-weight:700;
+    height:3cm;
+    width:3cm;
+    color:white;
+    position: relative;
+    z-index: 99;
+    top:1in;
+    padding-left:4in;
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke:1px white;
+    align-items: center;
+    animation:alternate;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
+
+  .rev::before {
+      transform: scaleX(0);
+      transform-origin: bottom right;
+  }
+
+  .rev:hover::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+  }
+
+  .rev::before {
+      content: "";
+      display: block;
+      width: 10.6in;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      inset: 0 0 0 0;
+      background: rgb(4, 3, 3);
+      z-index: -1;
+      transition: transform .3s ease;
+  }
+
+  .rev {
+      position: relative;
+      font-size: 100px;
+
+      height: 3cm;
+      width: 100%;
+      color: white;
+      top: 5in;
+      padding-left: 2in;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px rgb(255, 255, 255);
+      align-items: center;
+      z-index: 99;
+  }
+
+  .rev {
+      block-size: 100%;
+      inline-size: 100%;
+  }
+
+  .revs {
+      min-block-size: 100%;
+      min-inline-size: 100%;
+      margin: 0;
+      z-index: 99;
+      box-sizing: border-box;
+      display: grid;
+      place-content: center;
+      font-family: 'Trebuchet MS';
+  }
+
+  @media (orientation: landscape) {
+      body {
+          grid-auto-flow: column;
+      }
+  }
